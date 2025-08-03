@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return f'<h1>Hello from Docker!</h1><p>Environment: {os.getenv("ENV", "development")}</p>'
+    return f'<h1>Hello from Automated Docker!</h1><p>Environment: {os.getenv("ENV", "development")}</p>'
 
 @app.route('/health')
 def health():
